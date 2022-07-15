@@ -36,3 +36,18 @@ Meme Maker with canvas API (Vanilla Javascript)
     };
   }
   ```
+
+- Adding Text : on Double Click Canvas
+
+  ```js
+  function onDoubleClick(event) {
+    const text = textInput.value;
+    if (text !== "") {
+      ctx.save();
+      ctx.lineWidth = 1;
+      ctx.font = "68px sans-serif";
+      ctx.fillText(text, event.offsetX, event.offsetY);
+      ctx.restore();
+    }
+  }
+  ```
