@@ -65,9 +65,11 @@ function onModeClick() {
   }
 }
 function onDestroyClick() {
-  ctx.fillStyle = "white";
-  ctx.fillRect(0, 0, CANVAS_WIDTH, CANVAS_HEIGHT);
-  color.value = ctx.fillStyle;
+  if (confirm("정말로 지울까요???") === true) {
+    ctx.fillStyle = "white";
+    ctx.fillRect(0, 0, CANVAS_WIDTH, CANVAS_HEIGHT);
+    color.value = ctx.fillStyle;
+  }
 }
 function onEraserClick() {
   ctx.strokeStyle = "white";
