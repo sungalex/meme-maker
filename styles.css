@@ -14,7 +14,6 @@ body {
 canvas {
   width: 800px;
   height: 800px;
-  border: 5px solid black;
   background-color: white;
   border-radius: 10px;
 }
@@ -49,4 +48,39 @@ input#color {
 .btns {
   display: flex;
   flex-direction: column;
+  gap: 20px;
+}
+
+button,
+label.add-photo {
+  all: unset;
+  padding: 10px 0px;
+  text-align: center;
+  background-color: royalblue;
+  color: white;
+  font-weight: 500;
+  cursor: pointer;
+  border-radius: 20px;
+  transition: opacity linear 0.1s;
+}
+
+.line-width-label {
+  text-align: center;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+input#file {
+  display: none;
+}
+
+input#text {
+  all: unset;
+  padding: 10px 0px;
+  text-align: center;
+  border-radius: 20px;
+  font-weight: 500;
+  background-color: white;
 }
