@@ -62,4 +62,17 @@ Meme Maker with canvas API (Vanilla Javascript)
     a.download = "myMeme.png";
     a.click();
   }
+  ``;
   ```
+
+## Code Challenge (//TO-DO)
+
+- to be able to change the font
+
+  - change font-size, font-family with `ctx.font`
+
+  - change between stroke and fill with `strokeText` and `fillText`
+
+- to be able to change drawing mathod
+
+  - change between drawing lines and drawing shapes with `stroke` and `fill`
