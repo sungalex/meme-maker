@@ -51,3 +51,15 @@ Meme Maker with canvas API (Vanilla Javascript)
     }
   }
   ```
+
+- Saving Image
+
+  ```js
+  function onSaveClick() {
+    const url = canvas.toDataURL();
+    const a = document.createElement("a");
+    a.href = url;
+    a.download = "myMeme.png";
+    a.click();
+  }
+  ```
